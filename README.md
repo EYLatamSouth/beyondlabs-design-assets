@@ -1,162 +1,140 @@
-# 📦 Design Assets
-> Design assets and resources for Design Assets, containing UI components, icons, and brand materials.
+# 📦 Beyondlabs Design Assets
+> Central repository for Beyondlabs brand assets, containing logos, illustrations, and visual resources for all Beyondlabs products and associated brands.
 
 ## 🚀 Features
 
-- 🎨 Design System - Consistent UI components
-- 📚 Asset Library - Comprehensive design resources
-- ✨ Modern Architecture - Clean and maintainable codebase
-- 🔧 Easy Configuration - Simple setup and deployment
+- 🎨 Multi-brand Support - Assets for all Beyondlabs products and brands
+- 📚 Resolution Options - High, medium, and screen resolution variants
+- 🌓 Background Adaptability - Assets optimized for light/dark backgrounds
+- �️ Organized Structure - Clear folder hierarchy by brand and type
 
 ## 📋 Prerequisites
 
 Before you begin, ensure you have met the following requirements:
 
 ### Required Software:
-- Python version (analyze project for minimum required version)
-- Dependencies from `requirements.txt`, `pyproject.toml`, or equivalent
-
-- Node.js version (check `.nvmrc`, `package.json` engines field)
-- npm/yarn/pnpm (based on lock files present)
-- Dependencies from `package.json`
-
-- System dependencies (databases, message queues, etc.)
-- External services or APIs required
+- Git (for cloning and version control)
+- Image viewer/editor software (for working with assets)
 
 ### Optional but Recommended:
-- Development tools (Docker, Git, etc.)
+- Adobe Creative Suite or similar for professional asset editing
+- Version control GUI (like GitHub Desktop, SourceTree, etc.)
 
 ## 🔧 Installation
 
-### For Python projects:
 ```bash
 # Clone the repository
 git clone https://github.com/EYLatamSouth/beyondlabs-design-assets
 cd beyondlabs-design-assets
-
-# Using UV (if pyproject.toml exists)
-uv sync
-
-# OR using pip
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-pip install -r requirements.txt
-
-# Configure environment variables (if .env.example exists)
-cp .env.example .env
 ```
 
-### For Node.js projects:
-```bash
-# Clone the repository
-git clone https://github.com/EYLatamSouth/beyondlabs-design-assets
-cd beyondlabs-design-assets
-
-# Install dependencies (detect package manager from lock files)
-npm install    # if package-lock.json exists
-# OR
-yarn install   # if yarn.lock exists
-# OR
-pnpm install   # if pnpm-lock.yaml exists
-
-# Configure environment variables (if .env.example exists)
-cp .env.example .env
-```
+That's it! The repository contains static assets that can be used directly after cloning.
 
 ## 💻 Usage
 
-### Basic Usage:
+### Asset Organization
 
-```bash
-# Azure Functions
-func start
+Each brand/product has its own directory containing optimized assets:
 
-# FastAPI
-uv run uvicorn [module]:app --reload --port [PORT]
+#### Logo Variants:
+- `for-dark-background/` - Logos optimized for dark backgrounds
+- `for-light-background/` - Logos optimized for light backgrounds
+- `with-background/` - Logos with branded background
 
-# Flask
-uv run flask run --port [PORT]
+#### Resolution Options:
+- `high-resolution/` - For print and high-DPI displays
+- `medium-resolution/` - For standard web and app use
+- `screen-resolution/` - For smaller UI elements
 
-# Standalone scripts
-uv run python [main_script.py]
-```
-
-```bash
-# Development
-npm run dev    # or yarn dev / pnpm dev
-
-# Production
-npm start      # or yarn start / pnpm start
-
-# Build (if applicable)
-npm run build  # or yarn build / pnpm build
-```
+### Best Practices:
+1. Use the appropriate resolution for your use case
+2. Select the correct background variant
+3. Maintain aspect ratios when resizing
+4. Reference assets using relative paths in your projects
 
 ## 🏗️ Project Structure
 
 ```
-Design Assets/
+beyondlabs-design-assets/
 ├── 📄 README.md
 ├── 📁 beyondactions/
-│   ├── 📁 logo/
+│   └── 📁 logo/
+│       ├── 📁 for-dark-background/
+│       ├── 📁 for-light-background/
+│       └── 📁 with-background/
 ├── 📁 beyondfunding/
 │   ├── 📁 illustrations/
-│   ├── 📁 logo/
+│   │   ├── 📁 for-dark-background/
+│   │   └── 📁 with-background/
+│   └── 📁 logo/
+│       ├── 📁 for-dark-background/
+│       ├── 📁 for-light-background/
+│       └── 📁 with-background/
 ├── 📁 beyondlabs/
-│   ├── 📁 logo/
+│   └── 📁 logo/
+│       ├── 📁 for-dark-background/
+│       ├── 📁 for-light-background/
+│       └── 📁 with-background/
 ├── 📁 beyondpass/
-│   ├── 📁 logo/
+│   └── 📁 logo/
 ├── 📁 beyondscraping/
-│   ├── 📁 logo/
+│   └── 📁 logo/
 ├── 📁 compass-ui/
-│   ├── 📁 logo/
+│   └── 📁 logo/
 ├── 📁 digitalsquads/
-│   ├── 📁 logo/
+│   └── 📁 logo/
 ├── 📁 ey/
-│   ├── 📁 logo/
+│   └── 📁 logo/
 ├── 📁 wavespace-garage/
 │   ├── 📁 logo/
-│   ├── 📁 wallpaper/
-├── 📁 wavespace-skyline/
-│   ├── 📁 logo/
+│   └── 📁 wallpaper/
+└── 📁 wavespace-skyline/
+    └── 📁 logo/
+
+Each logo directory contains:
+- high-resolution/
+- medium-resolution/
+- screen-resolution/
 ```
 
-### Environment Variables:
-Create a `.env` file in the root directory with the following variables:
+### Asset Types
 
-```env
-# [CATEGORY: e.g., API Keys]
-[VARIABLE_NAME]=description_of_variable
+#### Logos
+- Primary and secondary brand marks
+- Available in multiple color schemes
+- Optimized for different backgrounds
+- Multiple resolution options
 
-# [CATEGORY: e.g., Database]
-[VARIABLE_NAME]=description_of_variable
-```
+#### Illustrations
+- Brand-specific illustrations
+- Marketing materials
+- UI elements
 
-- Variable name
-- Description
-- Example value (if safe)
-- Required/Optional status
-
-### For REST APIs:
-**[PYTHON - FASTAPI]**:
-- **Interactive Docs**: `http://localhost:[PORT]/docs`
-- **ReDoc**: `http://localhost:[PORT]/redoc`
-
-**[NODE.JS - EXPRESS WITH SWAGGER]**:
-- **Swagger UI**: `http://localhost:[PORT]/api-docs`
-
-### Available Endpoints:
-- `[METHOD] /endpoint` - Description
+#### Wallpapers
+- Branded desktop backgrounds
+- Event-specific designs
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please follow these steps:
+Contributions to the design assets are welcome! Please follow these steps:
 
 1. Fork the project
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+2. Create your feature branch (`git checkout -b feature/NewAssets`)
+3. Add or update assets following these guidelines:
+   - Use the appropriate folder structure
+   - Provide all necessary resolution variants
+   - Ensure assets meet quality standards
+   - Include both light and dark background versions if applicable
+4. Commit your changes (`git commit -m 'Add new brand assets'`)
+5. Push to the branch (`git push origin feature/NewAssets`)
+6. Open a Pull Request
+
+### Quality Guidelines
+- Vector formats preferred for logos (SVG)
+- Raster images should be optimized
+- Maintain consistent naming conventions
+- Include all required resolution variants
+- Test assets in both light and dark contexts
 
 ---
 
