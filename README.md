@@ -6,7 +6,7 @@
 - 🎨 Multi-brand Support - Assets for all Beyondlabs products and brands
 - 📚 Resolution Options - High, medium, and screen resolution variants
 - 🌓 Background Adaptability - Assets optimized for light/dark backgrounds
-- �️ Organized Structure - Clear folder hierarchy by brand and type
+- Organized Structure - Clear folder hierarchy by brand and type
 
 ## 📋 Prerequisites
 
